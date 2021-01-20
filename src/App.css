@@ -32,7 +32,6 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid greenyellow;
   padding: 0;
   width: 100%;
 }
@@ -46,7 +45,7 @@ button {
   border: none;
   font-size: 13px;
   width: 40%;
-  padding: 1em .5em;
+  padding: 1em;
   cursor: pointer;
 }
 

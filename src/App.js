@@ -21,10 +21,10 @@ function App() {
               one stop shop for managing your projects from start to finish.
             </p>
 
-            <form>
-              <input id="email" name="email" type="text" placeholder="enter your email" disabled/>
+            {/* <form>
+              <input id="email" name="email" type="text" placeholder="enter your email"/>
               <button>Request Demo</button>
-            </form>
+            </form> */}
           </section>
 
           <section className="col-lg-4 col-md-5 col-sm-12 col-xs-12">
