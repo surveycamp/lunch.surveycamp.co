@@ -9,8 +9,12 @@
 .App-header {
   padding: 1em;
 }
+.App-header div {
+  width: 150px;
+}
 .App-header img {
   height: auto;
+  width: 100%;
 }
 article.container {
   margin: 3em auto;
@@ -30,6 +34,7 @@ form {
 input {
   padding: .5em;
   width: 70%;
+  border: none !important;
 }
 button {
   background: greenyellow;
