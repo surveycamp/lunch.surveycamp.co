@@ -34,7 +34,7 @@ function App() {
       </article>
         
       <footer>
-        &copy; {Date()}
+        &copy; {new Date().getFullYear()}
         </footer>
       </div>
   );

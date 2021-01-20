@@ -30,18 +30,23 @@ article.container {
 }
 form {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid greenyellow;
+  padding: 0;
+  width: 100%;
 }
 input {
   padding: .5em;
-  width: 70%;
+  width: 60%;
   border: none !important;
 }
 button {
   background: greenyellow;
   border: none;
-  font-size: 14px;
-  width: auto;
-  padding: .5em;
+  font-size: 13px;
+  width: 40%;
+  padding: 1em .5em;
   cursor: pointer;
 }
 
@@ -54,9 +59,9 @@ button {
     padding: 1em;
     width: 100%;
   }
-  input {
-    width: 60%;
-  }
+  /* button {
+    width: 50%;
+  } */
 }
 
 @media only screen and (max-width: 700px) {
@@ -68,10 +73,7 @@ button {
   .marketing section {
     margin-top: 0;
   }
-  input {
-    width: 60%;
-  }
-  button {
-    width: auto;
-  }
+  /* button {
+    width: 70%;
+  } */
 }
