@@ -12,9 +12,9 @@ function App() {
           </div>
         </header>
 
-      <article className="container">
+      <article className="container-fluid">
         <div className="row no-gutter justify-content-center marketing">
-          <section className="col-lg-6 col-md-5 col-xs-12 col-sm-12">
+          <section className="col-lg-4 col-md-5 col-xs-12 col-sm-12">
             <h1>Introducing Surveycamp</h1>
             <p>
               Surveycamp is a bespoke project management platform for managing your
@@ -28,7 +28,7 @@ function App() {
             </form>
           </section>
 
-          <section className="col-lg-6 col-md-5 col-sm-12 col-xs-12">
+          <section className="col-lg-4 col-md-5 col-sm-12 col-xs-12">
             <img src={Platform} alt="platform" />
           </section>
         </div>
