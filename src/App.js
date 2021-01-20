@@ -23,7 +23,7 @@ function App() {
             </p>
 
             <form>
-              <input id="email" name="email" type="text" placeholder="enter your email" />
+              <input id="email" name="email" type="text" placeholder="enter your email" disabled/>
               <button>Request Demo</button>
             </form>
           </section>
