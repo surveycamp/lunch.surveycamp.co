@@ -1,0 +1,5 @@
+.Toastify__toast--success {
+  background-color: rgb(0, 194, 0);
+  border-radius: 5px;
+  width: 300px;
+}
