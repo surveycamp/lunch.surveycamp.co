@@ -50,6 +50,7 @@ function App() {
     
     function loop(t) {
       animation.tick(t);
+      // eslint-disable-next-line no-unused-vars
       customRAF = requestAnimationFrame(loop);
     }
     
