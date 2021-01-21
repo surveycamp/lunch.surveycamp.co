@@ -26,6 +26,9 @@ article.container {
   margin-top: 10em;
   padding: 2em;
 }
+.marketing p {
+  margin-top: .5em;
+}
 span {
   color: red;
   display: block;

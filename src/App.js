@@ -2,7 +2,7 @@ import anime from 'animejs';
 import Platform from './img/platform.png';
 import logo from './img/survey_camp_logo.png'
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { notifyOk, notifyError } from './utils/toaster';
 
 const encode = (data) => {
@@ -14,6 +14,7 @@ const encode = (data) => {
 function App() {
   const [formState, setFormState] = useState({ email: '' });
   const [error, setError] = useState('');
+  let customRAF = useRef(window)
 
   const handleSubmit = (e) => {
     if (formState.email === '') {
@@ -38,8 +39,7 @@ function App() {
   }
 
   useEffect(() => {
-    let customRAF;
-    var animation = anime({
+    const animation = anime({
       targets: '.platform',
       translateY: 10,
       direction: 'alternate',
@@ -50,10 +50,8 @@ function App() {
     
     function loop(t) {
       animation.tick(t);
-      // eslint-disable-next-line no-unused-vars
-      customRAF = requestAnimationFrame(loop);
+      customRAF.current.requestAnimationFrame(loop);
     }
-    
     requestAnimationFrame(loop);
   }, [error])
 
@@ -81,6 +79,7 @@ function App() {
               <input onChange={(e) => handleChange(e.target.value)} id="email" name="email" type="email" placeholder="enter your company email address" />
               <button type="submit">Request for Demo</button>
             </form>
+            <p>For other enquiries email us at <em>info.surveycamp@gmail.com</em></p>
           </section>
 
           <section className="col-lg-4 col-md-5 col-sm-12 col-xs-12 platform" id="platform">
@@ -90,7 +89,7 @@ function App() {
       </article>
         
       <footer>
-        &copy; {new Date().getFullYear()}
+        &copy; Surveycamp, {new Date().getFullYear()} 
         </footer>
       </div>
   );
