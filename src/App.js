@@ -74,8 +74,8 @@ function App() {
             </p>
 
             <form onSubmit={handleSubmit}>
-              {error !== '' ? <span>{error}</span> : null}
               <label htmlFor="email">Enter company email to request demo</label>
+              {error !== '' ? <span>{error}</span> : null}
               <input onChange={(e) => handleChange(e.target.value)} id="email" name="email" type="email" placeholder="enter your company email address" />
               <button type="submit">Request for Demo</button>
             </form>
