@@ -3,27 +3,43 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   width: 100%;
+  overflow-y: scroll;
 }
 .App-header {
-  padding: 1em;
+  padding: 1em 0;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 h1 {
   font-weight: 800;
+  font-size: 50px;
+}
+h2 {
+  font-weight: 900px;
 }
 .App-header div {
   width: 150px;
 }
 .App-header img {
   height: auto;
-  width: 100%;
+  width: 40px;
 }
 article.container {
   margin: 3em auto;
 }
+article.hero {
+  margin-bottom: 10em;
+}
+#waitlist {
+  margin-bottom: 5em;
+}
 .marketing section {
-  margin-top: 10em;
+  margin-top: 12em;
+  margin-bottom: 5em;
   padding: 2em;
 }
 .marketing p {
@@ -39,42 +55,64 @@ span {
 }
 form {
   padding: 0;
-  width: 100%;
+  width: 60%;
+  margin: auto;
+  padding: 3em;
+  background: #222222;
+  color: #ffffff;
+  border-radius: 5px;
+}
+form h2 {
+  margin-bottom: 1em;
 }
 label {
   font-weight: 600;
 }
-input {
+input, select {
   padding: .8em;
   width: 100%;
   border: 5px;
   margin-bottom: 1em;
-  border: 2px solid rgba(0, 0, 0, .3);
   border-radius: 5px;
 }
-form button {
+.formGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.formGroup .inputGroup {
+  width: 48%;
+}
+button {
   background: rgb(0, 194, 0);
   color: #ffffff;
   border: none;
-  font-size: 15px;
-  width: 60%;
-  padding: .8em .3em;
+  font-size: 18px;
+  margin-top: 1.5em;
+  padding: 1em 3em;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.error {
+  color: red;
 }
 
 @media screen and (min-width: 700px) {
   footer {
     text-align: center;
-    position: absolute;
     bottom: 0;
     left: 0;
     padding: 1em;
     width: 100%;
   }
+  .formGroup .inputGroup {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1024px) {
   footer {
     text-align: center;
     padding: 1em;
@@ -88,5 +126,15 @@ form button {
   }
   button {
     padding: .5em;
+  }
+  form {
+    width: 95%;
+    padding: 2em;
+  }
+  article.hero {
+    margin-bottom: 0;
+  }
+  .formGroup .inputGroup {
+    width: 100%;
   }
 }
