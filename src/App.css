@@ -129,7 +129,10 @@ button {
   }
   form {
     width: 95%;
-    padding: 2em;
+    padding: 2em 1em;
+  }
+  form h2 {
+    font-size: 25px;
   }
   article.hero {
     margin-bottom: 0;
