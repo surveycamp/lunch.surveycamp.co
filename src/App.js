@@ -33,7 +33,7 @@ function App() {
         const getEmail = await api.get(`/exec?action=checkEmail&searchString=${values.companyEmail}`)
 
         if (getEmail.data.result === 'success' && getEmail.data.message === 'email already registered') {
-          notifyError('We already have your details. We will email you when we launch');
+          notifyError('We already have your details. We will email you when we launch.');
           setSubmitting(false)
           resetForm();
           return;
